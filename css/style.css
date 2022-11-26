@@ -1,0 +1,33 @@
+<style>
+    h1 {
+    font-family: 'MS Sans Serif', Geneva, sans-serif;
+    }
+    h2 {
+    font-weight: bold;
+    font-size: 35px;
+    font-family: 'MS Sans Serif', Geneva, sans-serif;
+    }
+    h3 {
+    font-weight: bold;
+    font-family: 'MS Sans Serif', Geneva, sans-serif;
+    }
+    p {
+    font-family: 'MS Sans Serif', Geneva, sans-serif;
+    }
+    a:link, a:visited, a:hover, a:active {
+    color: ForestGreen;
+    background-color: transparent;
+    text-decoration: none;
+    }
+    body::after {
+        content: "";
+        background: url(/img/jejuDrink.jpg);
+        opacity: 0.5;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: fixed;
+        z-index: -1;   
+      }
+</style>
