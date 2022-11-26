@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>LEE JUNG SOO's Blog</title>
+
+        <meta charset="UTF-8">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="keywords" content="Data Science, Genomics">
+        <meta name="description" content="LEE JUNG SOO's Blog">
+        <meta name="author" content="LEE JUNG SOO">
+
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="LEE JUNG SOO's Blog" />
+        <meta property="og:description" content="Learning Bioinformatics" />
+        <meta property="og:image" content="https://github.com/jslfree080/myWebsite/blob/main/img/jejuDrink.jpg" />
+        <meta property="og:url" content="https://www.jslfree080.com/" />
+
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:title" content="LEE JUNG SOO's Blog" />
+        <meta name="twitter:description" content="Learning Bioinformatics" />
+        <meta name="twitter:image" content="https://github.com/jslfree080/myWebsite/blob/main/img/jejuDrink.jpg" />
+        <meta name="twitter:domain" content="https://www.jslfree080.com/" />
+
+        <!-- https://studio.tailorbrands.com/ -->
+        <!-- https://favicon.io/favicon-converter/ -->
+        <link rel="icon" href="/img/favicon.ico">
+        <link rel="stylesheet" href="/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/css/hux-blog.min.css">
+        <link rel="stylesheet" href="/css/style.css">
+
+        <script src='https://d33wubrfki0l68.cloudfront.net/bundles/2997b5a3582af4495ba9e0d7cf1fa0de87ac5726.js'></script>
+        <script src="https://kit.fontawesome.com/ff49197d41.js" crossorigin="anonymous"></script>
+    </head>
+
+
+
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        
+        <div class="navbar-header page-scroll">
+
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Jungsoo Lee</a>
+        </div>
+
+        
+        
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="/">Blog</a></li>
+                    <li><a href="/others/20220929_CV_JSL.pdf">CV</a></li>
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+    
+</nav>
+<script>
+    
+    
+    
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        
+            $navbar.className = " ";
+            
+            setTimeout(function(){
+                
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+    
+
+<header class="intro-header" style="background-image: url('/img/unsplash_pixlr.jpg')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 ">
+                <div class="site-heading">
+                    <h1>Jungsoo Lee</h1>
+                    
+		    <span class="subheading">Learning Bioinformatics</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+<article>
+    <div class="container" style="background-color: white;">
+        <div class="row">
+
+            
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
+       
+                
+<!-- http://www.bioinformatics.org/people/list.php -->
+<h2 id="about"><br /><br />About</h2>
+<p>Hey, It's Jungsoo!</p>
+<p>I have completed my Master’s Degree in Genomics Data Analysis from Korea University College of Medicine. I like challenges, love to learn new technologies, and constantly develop my skills.<br><br><hr/></p>
+
+<h2 id="research experiences"><br>Main Research Experiences</h2>
+<h3 id="cancer genomics">Cancer Genomics</h3>
+<p>I have analyzed uterine sarcoma samples using comprehensive NGS platforms including WES, RNA-Seq, and WGS. The various data analyses that I’ve conducted are as follows:</p>
+<ul style="list-style-type: square;">
+<li>Investigation of somatic mutation landscape</li>
+<li>Detection of cancer driver genes</li>
+<li>Analysis of copy number variation</li>
+<li>Inference of transcription factor activity</li>
+<li>Detection of recurrent gene fusions and structural variations</li>
+</ul>
+<p><a href="https://github.com/jungsoo080/jungsoo080.github.io/blob/main/others/ESS_Poster.pdf">→ Have a look at my open seminar poster</a></p>
+<img src="/img/ess_PI3K_AKT_pathway_v2.png" style="float: left; height: 50%; width: 50%"/>
+<img src="/img/dorothea_preview_JSL_screenshot.png" style="float: right; margin-top: 100px; height: 50%; width: 50%"/>
+<p style="color:white">-<br></p>
+<p style="color:white">-<br></p>
+<h3 id="multimodal analysis">Single-cell/nucleus and Spatial Transcriptomics</h3>
+<p>I had a chance to participate in analyzing the ESCC samples with three transcriptomic platforms. Some of the analyses that I’ve experienced are as follows:</p>
+<ul style="list-style-type: square;">
+    <li>Detection of doublets and multiplets</li>
+    <li>Correction of batch effects between scRNA-seq and snRNA-seq</li>
+    <li>Cell type annotation with DEGs and unsupervised clustering</li>
+    <li>Pseudotime trajectory analysis</li>
+    <li> Decomposing and integrating spatial transcriptomics using single-cell/nucleus data</li>
+    </ul>
+<img src="/img/FinalLayeredPlot.png" style="float: left; margin-top: 50px; height: 50%; width: 50%"/>
+<img src="/img/210628_Illumina_Visium_JSL.png" style="float: right; height: 50%; width: 50%"/>
+<p style="color:white">-<br></p>
+<p><hr/></p>
+
+<h2 id="skills"><br>Programming Languages & Scripts</h2>
+<p>[R]<br />I have experience in utilizing statistical inference like bootstrapping. Personally, I'm fascinated with data visualization in R.</p>
+<p>[Python]<br />I have skills to apply supervised machine learning models and can make raw data suitable to those models based on pre-processing such as feature selection and hyperparameter tuning.<br><br><a href="https://github.com/jungsoo080/JslCodes/blob/main/GEOdownload.py">GEOdownload.py</a>: I made a Python script that automates downloading supplementary files from GEO.</p>
+<p>[Bash]<br />I can perform some basic tasks with shell scripting.</p>
+<p>[Java]<br /><a href="https://github.com/jungsoo080/JslCodes/blob/main/VcfFormatParsedTxt.jar">VcfFormatParsedTxt.jar</a>: I made a simple Java program that parses the FORMAT column of vcf file, converting to txt file.<br><br><hr/></p>
+
+
+<h2 id="publications"><br>Publications</h2>
+<p style="font-size: 15px;">Bellone S, Roque DM, Siegel ER, Buza N, Hui P, Bonazzoli E, Guglielmi A, Zammataro L, Nagarkatti N, Zaidi S, <u><b>Lee J</b></u>, Silasi DA, Huang GS, Andikyan V, Damast S, Clark M, Azodi M, Schwartz PE, Tymon-Rosario JR, Harold JA, Mauricio D, Zeybek B, Menderes G, Altwerger G, Ratner E, Alexandrov LB, Iwasaki A, Kong Y, Song E, Dong W, Elvin JA, Choi J, Santin AD. <a href="https://acsjournals.onlinelibrary.wiley.com/doi/10.1002/cncr.34025">A phase 2 evaluation of pembrolizumab for recurrent Lynch-like versus sporadic endometrial cancers with microsatellite instability</a>. Cancer. 2022 Mar 15;128(6):1206-1218. doi: 10.1002/cncr.34025. Epub 2021 Dec 7. PMID: 34875107.</p>
+<p style="font-size: 15px;">Bellone S, Roque DM, Siegel ER, Buza N, Hui P, Bonazzoli E, Guglielmi A, Zammataro L, Nagarkatti N, Zaidi S, <u><b>Lee J</b></u>, Silasi DA, Huang GS, Andikyan V, Damast S, Clark M, Azodi M, Schwartz PE, Tymon-Rosario J, Harold J, Mauricio D, Zeybek B, Menderes G, Altwerger G, Ratner E, Alexandrov LB, Iwasaki A, Kong Y, Song E, Dong W, Elvin J, Choi J, Santin AD. <a href="https://www.annalsofoncology.org/article/S0923-7534(21)01170-4/fulltext">A phase II evaluation of pembrolizumab in recurrent microsatellite instability-high (MSI-H) endometrial cancer patients with Lynch-like versus MLH-1 methylated characteristics (NCT02899793)</a>. Ann Oncol. 2021 Aug;32(8):1045-1046. doi: 10.1016/j.annonc.2021.04.013. Epub 2021 Apr 28. PMID: 33932502.<br><br><hr/></p>
+
+<footer>
+    <nav>
+        <i class="fa-solid fa-envelope-open"></i>
+        <span>jungsoo080@korea.ac.kr</span><br/>
+        <i class="fa-brands fa-github"></i>
+        <a href='https://github.com/jungsoo080' target='_blank'>Github<br><br></a>
+        <span>© Jungsoo Lee 2022. All rights reserved.</span>
+    </nav>
+</footer>
+
+</body>
+</html>
